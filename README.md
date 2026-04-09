@@ -2,6 +2,8 @@
 
 Unicode spinner animations for Go CLI applications. Beautiful, smooth, and highly customizable terminal spinners with 40+ built-in styles.
 
+![MIRA Logo](./logo.png)
+
 ## Features
 
 - 🎨 **40+ Built-in Spinners** - From classic braille to modern animations
@@ -119,7 +121,7 @@ renderer.Output = os.Stdout
 renderer.FormatFrame = "\r→ %s %s"     // Custom prefix
 renderer.FormatFinal = "\r→ %s %s\n"   // Custom final format
 
-spinner := agentspinner.StartCustom("Processing...", 
+spinner := agentspinner.StartCustom("Processing...",
     agentspinner.NewDefaultRegistry().Get(agentspinner.Dots),
     agentspinner.WithRenderer(renderer),
 )
@@ -130,85 +132,85 @@ spinner.Stop("Done!")
 
 ### Classic Braille Spinners
 
-| Name | Preview | Description |
-|------|---------|-------------|
-| `Braille` | `⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏` | Classic rotating braille (default) |
-| `BrailleWave` | `⠁⠂⠄⡀ → ⠂⠄⡀⢀ → ⠄⡀⢀⠠` | Wave pattern across braille cells |
-| `DNA` | `⠋⠉⠙⠚ → ⠉⠙⠚⠒ → ...` | Double helix DNA animation |
+| Name          | Preview              | Description                        |
+| ------------- | -------------------- | ---------------------------------- |
+| `Braille`     | `⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏`         | Classic rotating braille (default) |
+| `BrailleWave` | `⠁⠂⠄⡀ → ⠂⠄⡀⢀ → ⠄⡀⢀⠠` | Wave pattern across braille cells  |
+| `DNA`         | `⠋⠉⠙⠚ → ⠉⠙⠚⠒ → ...`  | Double helix DNA animation         |
 
 ### Scan & Movement
 
-| Name | Preview | Description |
-|------|---------|-------------|
-| `Scan` | Vertical scanner bar moving left to right |
-| `ScanDual` | Dual vertical scanners converging |
-| `ScanLine` | Horizontal scanning line |
-| `Cascade` | Diagonal cascading effect |
-| `FillSweep` | Bottom-to-top fill animation |
-| `DiagSwipe` | Diagonal wipe transition |
+| Name        | Preview                                   | Description |
+| ----------- | ----------------------------------------- | ----------- |
+| `Scan`      | Vertical scanner bar moving left to right |
+| `ScanDual`  | Dual vertical scanners converging         |
+| `ScanLine`  | Horizontal scanning line                  |
+| `Cascade`   | Diagonal cascading effect                 |
+| `FillSweep` | Bottom-to-top fill animation              |
+| `DiagSwipe` | Diagonal wipe transition                  |
 
 ### Wave Animations
 
-| Name | Preview | Description |
-|------|---------|-------------|
-| `Wave` | Horizontal sine wave |
-| `WaveVertical` | Vertical sine wave |
-| `WaveRows` | Row-based wave motion |
-| `Ripple` | Expanding circular ripple |
+| Name           | Preview                   | Description |
+| -------------- | ------------------------- | ----------- |
+| `Wave`         | Horizontal sine wave      |
+| `WaveVertical` | Vertical sine wave        |
+| `WaveRows`     | Row-based wave motion     |
+| `Ripple`       | Expanding circular ripple |
 
 ### Geometric Patterns
 
-| Name | Preview | Description |
-|------|---------|-------------|
-| `Helix` | Double helix spiral |
-| `Orbit` | Orbiting dot pattern |
-| `Circle` | Drawing circle animation |
-| `Diamond` | Expanding diamond shape |
-| `Cross` | Rotating cross/plus |
-| `Star` | Four-pointed star rotation |
-| `Zigzag` | Zigzag pattern |
+| Name      | Preview                    | Description |
+| --------- | -------------------------- | ----------- |
+| `Helix`   | Double helix spiral        |
+| `Orbit`   | Orbiting dot pattern       |
+| `Circle`  | Drawing circle animation   |
+| `Diamond` | Expanding diamond shape    |
+| `Cross`   | Rotating cross/plus        |
+| `Star`    | Four-pointed star rotation |
+| `Zigzag`  | Zigzag pattern             |
 
 ### Progress & Loading
 
-| Name | Preview | Description |
-|------|---------|-------------|
-| `Progress` | Left-to-right progress bar |
-| `Loading` | Progressive fill animation |
-| `Bars` | Animated bar chart |
-| `Columns` | Filling columns sequentially |
-| `Expand` | Expanding rectangle |
-| `Shrink` | Shrinking rectangle |
+| Name       | Preview                      | Description |
+| ---------- | ---------------------------- | ----------- |
+| `Progress` | Left-to-right progress bar   |
+| `Loading`  | Progressive fill animation   |
+| `Bars`     | Animated bar chart           |
+| `Columns`  | Filling columns sequentially |
+| `Expand`   | Expanding rectangle          |
+| `Shrink`   | Shrinking rectangle          |
 
 ### Modern & Fun
 
-| Name | Preview | Description |
-|------|---------|-------------|
-| `Matrix` | Matrix-style falling code |
-| `Pulse` | Pulsing heartbeat effect |
-| `Radar` | Radar/sonar sweep |
-| `Typing` | Typing cursor animation |
-| `Bounce` | Bouncing ball effect |
+| Name       | Preview                   | Description |
+| ---------- | ------------------------- | ----------- |
+| `Matrix`   | Matrix-style falling code |
+| `Pulse`    | Pulsing heartbeat effect  |
+| `Radar`    | Radar/sonar sweep         |
+| `Typing`   | Typing cursor animation   |
+| `Bounce`   | Bouncing ball effect      |
 | `PingPong` | Ping pong game simulation |
-| `Snake` | Snake game-like path |
+| `Snake`    | Snake game-like path      |
 
 ### Decorative
 
-| Name | Preview | Description |
-|------|---------|-------------|
-| `Sparkle` | Random sparkle pattern |
-| `Rain` | Matrix-style rain drops |
-| `Tiles` | Tiling pattern animation |
+| Name           | Preview                     | Description |
+| -------------- | --------------------------- | ----------- |
+| `Sparkle`      | Random sparkle pattern      |
+| `Rain`         | Matrix-style rain drops     |
+| `Tiles`        | Tiling pattern animation    |
 | `Checkerboard` | Alternating checker pattern |
-| `RandomFill` | Random cell filling |
-| `Border` | Border tracing animation |
+| `RandomFill`   | Random cell filling         |
+| `Border`       | Border tracing animation    |
 
 ### Arrows & Indicators
 
-| Name | Preview | Description |
-|------|---------|-------------|
-| `Arrow` | Moving arrow pointer |
-| `Dots` | Animated dot matrix |
-| `Breathe` | Breathing effect |
+| Name      | Preview              | Description |
+| --------- | -------------------- | ----------- |
+| `Arrow`   | Moving arrow pointer |
+| `Dots`    | Animated dot matrix  |
+| `Breathe` | Breathing effect     |
 
 ### Complete List
 
@@ -232,23 +234,23 @@ spinner.Stop("Done!")
 
 ### Functions
 
-| Function | Description |
-|----------|-------------|
-| `Start(message, name?)` | Create and start a spinner |
+| Function                                 | Description                          |
+| ---------------------------------------- | ------------------------------------ |
+| `Start(message, name?)`                  | Create and start a spinner           |
 | `StartCustom(message, spinner, opts...)` | Start with custom spinner definition |
-| `Run(message, fn, name?)` | Execute function with spinner |
-| `RunWithResult(message, fn, name?)` | Execute function returning a value |
-| `NewTerminalRenderer()` | Default renderer (stderr, formatted) |
-| `NewRawRenderer()` | Configurable renderer (agnostic) |
-| `NewSilentRenderer()` | No-op renderer (quiet mode) |
+| `Run(message, fn, name?)`                | Execute function with spinner        |
+| `RunWithResult(message, fn, name?)`      | Execute function returning a value   |
+| `NewTerminalRenderer()`                  | Default renderer (stderr, formatted) |
+| `NewRawRenderer()`                       | Configurable renderer (agnostic)     |
+| `NewSilentRenderer()`                    | No-op renderer (quiet mode)          |
 
 ### Instance Methods
 
-| Method | Description |
-|--------|-------------|
-| `Update(message)` | Change the spinner message |
-| `Stop(message?)` | Stop with success (✓) |
-| `Fail(message?)` | Stop with error (✗) |
+| Method            | Description                           |
+| ----------------- | ------------------------------------- |
+| `Update(message)` | Change the spinner message            |
+| `Stop(message?)`  | Stop with success (✓)                 |
+| `Fail(message?)`  | Stop with error (✗)                   |
 | `HandleSignals()` | Enable graceful shutdown on interrupt |
 
 ### Types
@@ -298,6 +300,7 @@ spinner := agentspinner.StartCustom("Loading...", customSpinner,
 ```
 
 **RawRenderer options:**
+
 - `Output` - Destination writer (default: `os.Stdout`)
 - `FormatFrame` - Format string for frames (default: `"\r\033[K%s %s"`)
 - `FormatFinal` - Format string for final output (default: `"\r\033[K%s %s\n"`)
@@ -305,12 +308,12 @@ spinner := agentspinner.StartCustom("Loading...", customSpinner,
 
 **Migration from TerminalRenderer:**
 
-| Feature | TerminalRenderer | RawRenderer |
-|---------|-----------------|-------------|
-| Default output | stderr | stdout |
-| Auto padding | 2 spaces | none |
-| Auto newline | yes | configurable |
-| Custom format | no | yes |
+| Feature        | TerminalRenderer | RawRenderer  |
+| -------------- | ---------------- | ------------ |
+| Default output | stderr           | stdout       |
+| Auto padding   | 2 spaces         | none         |
+| Auto newline   | yes              | configurable |
+| Custom format  | no               | yes          |
 
 ## Examples
 
