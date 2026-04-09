@@ -1,0 +1,40 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Build artifacts
+/bin/
+/dist/
+/build/
+
+# Coverage
+coverage.out
+coverage.html
+*.cover
+*.cov
+
+# Dependencies
+/vendor/
+/go.work
+/go.work.sum
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.bak
+*.log
