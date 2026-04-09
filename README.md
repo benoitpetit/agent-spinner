@@ -1,10 +1,10 @@
 # Agent Spinner
 
-Unicode spinner animations for Go CLI applications. Beautiful, smooth, and highly customizable terminal spinners with 47+ built-in styles.
+Unicode spinner animations for Go CLI applications. Beautiful, smooth, and highly customizable terminal spinners with 40+ built-in styles.
 
 ## Features
 
-- 🎨 **47+ Built-in Spinners** - From classic braille to modern animations
+- 🎨 **40+ Built-in Spinners** - From classic braille to modern animations
 - ⚡ **Lightweight** - Zero external dependencies
 - 🎯 **Thread-Safe** - Concurrent access safe by design
 - 🔧 **Customizable** - Create your own spinners easily
@@ -210,7 +210,7 @@ spinner.Stop("Done!")
 | `Dots` | Animated dot matrix |
 | `Breathe` | Breathing effect |
 
-### Complete List (47 spinners)
+### Complete List
 
 **Classic:** `Braille`, `BrailleWave`, `DNA`
 
