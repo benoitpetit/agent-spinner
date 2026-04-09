@@ -25,7 +25,7 @@
 //	}
 //	spinner := agentspinner.StartCustom("Loading...", custom)
 //
-// Architecture
+// # Architecture
 //
 // The package follows a layered architecture with clear separation of concerns:
 //
@@ -36,7 +36,7 @@
 //   - internal/braille: Grid operations (internal implementation detail)
 //   - internal/animations: Animation generators (internal implementation detail)
 //
-// Testing
+// # Testing
 //
 // The package is designed for testability. Use WithRenderer() and WithClock()
 // to inject mocks for testing:
@@ -47,5 +47,4 @@
 //	    agentspinner.WithRenderer(mockRenderer),
 //	    agentspinner.WithClock(mockClock),
 //	)
-//
 package agentspinner
